@@ -233,7 +233,7 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
                   <Textarea
                     className="h-12"
                     disabled={loading}
-                    placeholder="eg:- describle your job role"
+                    placeholder="eg:- describe your job role"
                     {...field}
                     value={field.value || ""}
                   />
