@@ -40,7 +40,7 @@ React AI Mock Interview is an innovative web application designed to simulate re
 #### Clone this repository:
 
 ```
-git clone https://github.com/Vetrivel-VP/react-typescript-ai-mock-interview-november-2024.git
+git clone https://github.com/phsics/react-typescript-ai-mock-interview-november-2024.git
 ```
 
 #### Navigate to the project directory:
