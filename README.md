@@ -1,54 +1,106 @@
-# React + TypeScript + Vite
+# React AI Mock Interview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React AI Mock Interview is an innovative web application designed to simulate real-world mock interviews using AI. With seamless user authentication, an intuitive interface, and integration with advanced AI, this project serves as an invaluable tool for interview preparation.
 
-Currently, two official plugins are available:
+![My Project Landing Page](./snap.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- AI-Powered Mock Interviews  
+  Leverage Google Gemini AI to simulate realistic interview scenarios, evaluate responses, and provide personalized feedback.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Seamless Authentication  
+  User authentication is powered by Clerk, ensuring secure and efficient access control.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Intuitive UI  
+  Built with Shadcn UI, the application boasts a modern and responsive interface for a seamless user experience.
+
+- Data Management  
+  All user progress, interview analytics, and configurations are stored securely in Google Firebase Firestore.
+
+- Dynamic Interview Customization  
+  Customize interviews based on job roles, difficulty levels, and domains.
+
+---
+
+## Tech Stack
+
+- Frontend: React.js
+- Authentication: Clerk
+- UI Framework: Shadcn UI
+- Database: Google Firebase Firestore
+- AI Integration: Google Gemini AI
+
+---
+
+## Getting Started
+
+### Installation
+
+#### Clone this repository:
+
+```
+git clone https://github.com/Vetrivel-VP/react-typescript-ai-mock-interview-november-2024.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### Navigate to the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+cd react-ai-mock-interview
+```
+
+#### Install dependencies
+
+```
+npm i -g pnpm
+pnpm install
+```
+
+#### Start the development server
+
+```
+pnpm run dev
+```
+
+#### Firebase Initialization
+
+```
+firebase init
+```
+
+#### Firebase Deploy
+
+```
+firebase deploy
+```
+
+#### Project Build
+
+```
+pnpm run build
+```
+
+## Environment Variable
+
+Ensure the following environment variables are set up in a .env file:
+
+```
+VITE_FIREBASE_API_KEY=YOUR_API_KEY_REF
+VITE_FIREBASE_AUTH_DOMAIN=YOUR_API_KEY_REF
+VITE_FIREBASE_PROJECT_ID=YOUR_API_KEY_REF
+VITE_FIREBASE_STORAGE_BUCKET=YOUR_API_KEY_REF
+VITE_FIREBASE_MESSAGING_SENDER_ID=YOUR_API_KEY_REF
+VITE_FIREBASE_APP_ID=YOUR_API_KEY_REF
+```
+
+## Key Features
+
+- AI-Driven Insights
+  Provides real-time feedback on your interview performance, highlighting strengths and areas for improvement.
+
+- User-Friendly Dashboard
+  Track your progress, access past interviews, and download detailed performance reports.
+
+- Interactive Questionnaires
+  Engage with diverse question types, including multiple-choice, scenario-based, and technical coding challenges.
+
